@@ -20,3 +20,7 @@ Objectif: Permettre à l'utilisateur de saisir une tâche et de l'ajouter à une
 - todolist.js    # Logique JavaScript (événements et manipulation DOM)
 - README.md      # Documentation du projet
 - style.css      # style rendu
+
+
+![w3c](./valideur_html.png)
+![w3c](./valideur_css.png)
