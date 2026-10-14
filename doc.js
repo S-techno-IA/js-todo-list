@@ -1,31 +1,29 @@
-const monInput= document.querySelector("input");
-const AddBouton=document.querySelector("button");
-const AddListe=document.querySelector('#AjtListe');
+const monInput = document.querySelector("input");
+const AddBouton = document.querySelector("button");
+const AddListe = document.querySelector('#AjtListe');
 
 console.log(monInput, AddBouton, AddListe);
 
- const typedText = monInput.value;
-
 AddBouton.addEventListener('click', function () {
   console.log("Button waz clicked !");
- 
-  //Récupérer le texte et retire les espaces inutiles
-  const taskText = monInput.value.trim();
 
-  //Pour éviter les click vides
-  if (typedText===''){
+  // Récupérer le texte et retirer les espaces inutiles
+  const typedText = monInput.value.trim();
+
+  // Pour éviter les clics vides
+  if (typedText === '') {
     return;
   }
 
-  //Ajout des éléments de la Liste
-  const li=document.createElement('li');
+  // Ajout des éléments de la Liste
+  const li = document.createElement('li');
 
-  //Définir le texte
-  li.innerText=typedText;
+  // Définir le texte
+  li.innerText = typedText;
 
-  //Ajouter à la liste
+  // Ajouter à la liste
   AddListe.appendChild(li);
 
-  //Vider champ après saisie
+  // Vider le champ après saisie
   monInput.value = '';
 });
